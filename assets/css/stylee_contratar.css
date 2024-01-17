@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px;
+    z-index: 1000;
+    transition: opacity 0.8s ease-in-out;
+    opacity: 1; 
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-size: 12px
+}
+
+section {
+    padding: 30px 0;
+    background-image: url(../images/wall_fondo.png);
+
+}
+
+.formulario-contratar {
+    max-width: 100%;
+    padding: 0 20px;
+}
+
+.formulario-contratar label,
+.formulario-contratar input,
+.formulario-contratar select,
+.formulario-contratar button {
+    margin-bottom: 20px; 
+}
+
+#contratar-ahora {
+    background-color: #f8f8f8;
+    padding: 40px 0;
+}
+
+.formulario-contratar {
+    background: rgba(255, 255, 255, 0.616);
+    padding: 30px;
+    margin: 20px;
+    box-shadow: 0px 0px 10px rgb(23, 80, 145);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .fondo-inicio {
+        padding: 30px;
+    }
+
+    section {
+        padding: 20px 0;
+    }
+
+}
+button{
+    padding: 13px;
+    margin-top: 10px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+select{
+    padding: 3px;
+}

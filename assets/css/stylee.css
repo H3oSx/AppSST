@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+}
+#inicio h1{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 65px;
+    text-align: center;
+}
+
+#acerca-de h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+}
+#acerca-de img{
+    width: 200px;
+}
+#como-funciona h1{
+    text-align: center;
+}
+#como-funciona h2{
+    text-align: left;
+}
+#como-funciona p{
+    text-align: left;
+}
+#como-funciona img{
+    width: 200px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.fondo-inicio {
+    background-image: url('../images/fondos-para-páginas-web-12.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 50px;
+    animation: fadeInUp 1.5s ease;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px;
+    z-index: 1000;
+    transition: opacity 0.8s ease-in-out;
+    opacity: 1; 
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-size: 12px
+}
+
+section {
+    padding: 30px 0;
+}
+
+section h1,
+section h2,
+section p {
+    text-align: center;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .fondo-inicio {
+        padding: 30px;
+    }
+
+    section {
+        padding: 20px 0;
+    }
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#acerca-de {
+    background-color: #f8f8f8;
+    padding: 30px 0;
+}
+
+.mision,
+.vision,
+.tecnologia {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#como-funciona {
+    background-color: #f8f8f8;
+    padding: 30px 0;
+}
+
+.intuitivo,
+.rapido,
+.seguro {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}

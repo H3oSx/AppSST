@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViGii - Tu Aplicación Móvil</title>
+    <link rel="stylesheet" href="../css/stylee_contratar.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="../../index.html">Inicio</a></li>
+                    <li><a href="contratar.html">Contratar</a></li>
+                    <li><a href="index_login.html">Soporte</a></li>
+                    <li><a href="#como-funciona">Cuenta</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="contratar-ahora">
+        <div class="container">
+            <div class="formulario-contratar">
+                <h2>Solicitar Servicio</h2>
+                <p>Para solicitar el servicio, ingrese sus datos. Recuerde que solo se encuentra disponible para la ciudad de Riobamba.</p>
+                <form
+                    action="https://formspree.io/f/xnqeqkeb"
+                    method="POST"
+                >
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="Nombre" required>
+    <br>
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="Apellidos" required>
+    <br>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="Telefono" required>
+    <br>
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion" name="Direccion" required>
+    <br>
+                    <label for="horas-servicio">Horas del servicio:</label>
+                    <input type="text" id="horas" name="Horas de servicio" required>
+    <br>
+                    <label for="tipo-servicio">Tipo de Servicio:</label>
+                    <select id="tipo-servicio" name="tipo-servicio" required>
+                        <option value="Guardia de Seguridad">Guardia de seguridad</option>
+                        <option value="Transporte de valores">Transporte de valores</option>
+                    </select>    
+                    <br>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="pie">
+                <p>Derechos reservados © Security Software CIA.LTDA</p>
+                <p><b>Correo: </b>vigii.app@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
